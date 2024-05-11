@@ -1,0 +1,1 @@
+::: mangainfo.MangaParser
