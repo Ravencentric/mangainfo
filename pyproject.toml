@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mangainfo"
-version = "0.1.0"
+version = "0.1.1"
 description = "Libary and a CLI tool to generate mediainfo for manga archives"
 authors = ["Raventric <78981416+Ravencentric@users.noreply.github.com>"]
 readme = "README.md"
