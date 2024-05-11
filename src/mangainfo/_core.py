@@ -14,18 +14,18 @@ class MangaParser:
         Parameters
         ----------
         volume : Path | str
-            The path to the manga volume file or directory.
+            The path to the manga archive.
         """
         self.volume = Path(volume).expanduser().resolve()
 
     def full_scan(self) -> MangaInfo:
         """
-        Perform a full scan of the manga volume.
+        Perform a full scan of the manga archive.
 
         Returns
         -------
         MangaInfo
-            Information about the manga volume including all parsed pages.
+            Information about the manga archive including all parsed pages.
 
         Notes
         -----
@@ -35,13 +35,13 @@ class MangaParser:
 
     def partial_scan(self) -> MangaInfo:
         """
-        Perform a partial scan of the manga volume, extracting and parsing
+        Perform a partial scan of the manga archive, extracting and parsing
         only the smallest, median, and largest pages.
 
         Returns
         -------
         MangaInfo
-            Information about the manga volume including the parsed smallest,
+            Information about the manga archive including the parsed smallest,
             median, and largest pages.
 
         Notes
