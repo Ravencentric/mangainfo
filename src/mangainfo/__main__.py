@@ -8,10 +8,10 @@ from mangainfo._core import MangaParser
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        prog="mangainfo", description="Generate mediainfo-esque text from a manga archive."
+        prog="mangainfo", description="Generate mediainfo-esque text from a manga archive"
     )
-    parser.add_argument("path", type=Path, help="Path to a manga archive.")
-    parser.add_argument("--full", action="store_true", help="Scan every page. More accurate data but far slower.")
+    parser.add_argument("path", type=Path, help="Path to a manga archive")
+    parser.add_argument("--full", action="store_true", help="Scan every page. More accurate data but far slower")
 
     args = parser.parse_args()
 
